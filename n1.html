@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 60px;
+        }
+        .main_menu {
+            display: flex;
+            position: absolute;
+            width: 86%;
+            height: 29px;
+            left: 286px;
+            top: 48px;
+        }
+        .rectangle1 { 
+width: 9%;
+height: 29px;
+left: 386px;
+top: 48px;
+border: 1px solid rgba(209, 169, 84, 0.9);
+box-sizing: border-box;
+text-align: center;
+padding-top: 6px;
+padding-bottom: 6px;
+        }
+        .rec1_a {
+font-family: Montserrat;
+font-size: 13px;
+line-height: 16px;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: #D1A954;
+text-decoration: none;
+        }
+
+        .rectangle2 { 
+width: 152px;
+height: 29px;
+margin-left: 21px;
+box-sizing: border-box;
+text-align: center;
+padding-top: 6px;
+padding-bottom: 6px;
+        } 
+        .rectangle3 { 
+width: 116px;
+height: 29px;
+margin-left: 30px;
+box-sizing: border-box;
+text-align: center;
+padding-top: 6px;
+padding-bottom: 6px;
+        } 
+
+        .rec2_a {
+font-family: Montserrat;
+font-size: 13px;
+line-height: 16px;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: black;
+text-decoration: none;
+        }
+
+        .ext_menu {
+            position: absolute;
+width: 40px;
+height: 20px;
+left: 1200px;
+top: 48px;
+        }
+
+        .line1 {
+height: 0px;
+margin-bottom: 10px;
+top: 48px;
+border: 1px solid #000000;
+        }
+        .line2 {
+height: 0px;
+margin-bottom: 10px;
+top: 58px;
+border: 1px solid #000000;
+        }
+        .line3 {
+height: 0px;
+
+top: 68px;
+border: 1px solid #000000;
+        }
+
+        .main_items {
+            display:flex;
+            position: absolute;
+            height: 300px;
+            width:1230px;
+            top: 150px;
+            left: 60px;
+        }
+
+        .main_item1, .main_item2, .main_item3 {
+            width: 480px;
+            height: 300px;
+            margin-right: 30px;
+            box-sizing: border-box;
+        }
+        .mainimg {
+            width: 380px;
+            height: 300px;
+        }
+
+        .bloc1,  .bloc2,  .bloc3 {
+           position: relative;
+height: 106px;
+top: -110px;
+background: rgba(209, 169, 84, 0.7);
+        }
+
+        .bloc1_1, .bloc1_2, .bloc1_3 {
+            position: absolute;
+            width: 350px;
+            height: 76px;
+          margin-left: 15px;
+      top: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+box-sizing: border-box;
+        }
+
+        .t1 {
+font-family: Montserrat;
+margin-left: 80px;
+font-size: 25px;
+line-height: 35px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+        }
+
+        .t2 {
+            display: block;
+            font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 135%;
+text-align: center;
+color: #FFFFFF;
+        }
+        .t1_1 {
+            font-family: Montserrat;
+margin-left: 115px;
+font-size: 25px;
+line-height: 35px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+.aboutr {
+    position: relative;
+    width: 100%;
+    height: 1078px;
+left: 0px;
+top: 520px;
+}
+
+.grey1 {
+    position: relative;
+    top: 300px;
+    height:778px;
+    background: #F9F7F7;
+    z-index: -1;
+}
+
+.or {
+    margin-left: 40%;
+    font-family: Montserrat;
+   
+font-weight: 300;
+font-size: 34px;
+line-height: 145%;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: #222222;
+}
+
+.desc {
+    margin-left: 47.5%;
+    position:absolute;
+    top: 55px;  
+}
+
+.ld {
+    font-family: Montserrat;
+font-weight: 300;
+font-size: 9px;
+line-height: 11px;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #000000;
+display:block;
+margin-left: 46.1%;
+position:absolute;
+top: 95px;
+}
+
+.cart {
+    margin-left: 22%;
+    position:absolute;
+top: 115px; 
+height: 400px;
+}
+
+.cart1 {
+    position:absolute;
+    top: 570px; 
+    margin-left: 25%;
+}
+
+.tex1 {
+    position:absolute;
+    margin-left: 25%;
+    top: 740px;
+    width: 350px;
+    height: 206px;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 135%;
+color: #616161;
+}
+
+.group {
+    display: flex;
+    flex-wrap: wrap;
+    position:relative;
+    top: -220px;
+    height: 350px;
+    width: 540px;
+    margin-left: 750px;
+}
+.bly1 {
+    width: 268px; 
+    height: 175px;
+}
+.blu {
+    display: block;
+    margin-left: 40px;
+    margin-top: 10px;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 135%;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: #000000;
+}
+
+.str1, .gop {
+    display: flex;
+}
+
+.ch {
+    margin-top: 20px;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 135%;
+color: #616161;
+}
+
+.galery {
+    position: relative;
+    height: 560px;
+    width: 850px;
+    left: 305px;
+    top: 620px;
+}
+
+.gal {
+    position: absolute;
+    width: 113px;
+    height: 101px;
+    margin-right: 101px;
+    margin-left: 60px;
+    top: 70px;
+}
+
+.g1 {
+    display: block;
+    padding-left: 3px;
+    font-family: Montserrat;
+font-weight: 300;
+font-size: 21px;
+line-height: 135%;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+}
+
+.g2 {
+    display: block;
+    padding-left: 3px;
+    padding-top: 7px;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 9px;
+line-height: 11px;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #000000;
+}
+
+.usnat {
+    position: relative;
+    height: 250px;
+    width: 100%;
+    top: 750px;
+}
+
+.usta {
+    height: 250px;
+    width: 100%;
+  
+}
+.us {
+    position: absolute;
+    top: 50px;
+    left: 430px;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 36px;
+line-height: 145%;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: white;
+}
+
+.re1 {
+    position: absolute;  
+    top: 120px;
+    left: 390px;
+    background: white;
+    width: 190px;
+    height: 44px;
+}
+
+.re2 {
+    position: absolute;  
+    top: 120px;
+    left: 690px;
+    background: white;
+    width: 240px;
+    height: 44px;
+}
+.re1, .re2 {
+    padding-top: 30px;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: #000000;
+}
+
+.contacts {
+    position: relative;
+    height: 460px;
+    width: 850px;
+    left: 305px;
+    top: 850px;  
+    display: flex;
+}
+
+.con1 {
+    height: 460px;
+    width: 425px;  
+}
+
+.con2 {
+    height: 460px;
+    width: 425px;  
+}
+
+.inp3 {
+width: 380px;
+height: 110px;
+margin-top: 17px;
+margin-bottom: 17px;
+margin-left: 30px;
+top: 10px;
+border: 0.5px solid #D0D0D0;
+box-sizing: border-box;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 135%;
+/* identical to box height, or 19px */
+
+
+/* gray */
+
+color: #616161;
+}
+
+.tel {
+    display: block;
+    margin-left: 17px;
+    margin-top: 17px;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 135%;
+/* or 19px */
+
+
+/* gray */
+
+color: #616161;
+}
+
+.inp1 {
+    display: block;
+    margin-top: 17px;
+margin-bottom: 17px;
+margin-left: 30px;
+width: 380px;
+border: 0.5px solid #D0D0D0;
+box-sizing: border-box;
+}
+
+.inp2 {
+    display: block;
+    margin-top: 17px;
+margin-bottom: 17px;
+margin-left: 30px;
+width: 380px;
+border: 0.5px solid #D0D0D0;
+box-sizing: border-box;
+}
+
+.send {
+    width: 182px;
+height: 45px;
+margin-left: 30px;
+margin-top: 17px;
+background: #D1A954; 
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 135%;
+/* identical to box height, or 22px */
+
+text-align: center;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
+.tir1 {
+    width: 420px;
+    height: 91px;
+    /* border: 1px solid black; */
+}
+.tir2 {
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 36px;
+line-height: 145%;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: #000000;
+}
+
+.tir3 {
+    margin-top: 40px;
+    height: 34px;
+    width: 420px;
+}
+.tir4 {
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 135%;
+color: #616161;
+}
+
+.sup {
+    display:flex;
+}
+.sup1, .sup2 {
+    width:212px;
+    margin-top: 10px;
+    height:283px;
+    
+}
+
+.restic {
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 135%;
+/* or 22px */
+
+letter-spacing: 0.05em;
+text-transform: uppercase;
+
+position: absolute;
+top: 200px;
+color: #000000;
+}
+
+.diag {
+    display:flex;
+    position: absolute;
+top: 240px;
+
+}
+
+.diag2 {
+    display:flex;
+    position: absolute;
+top: 300px;
+
+}
+.diag3 {
+    display:flex;
+    position: absolute;
+top: 360px;
+
+}
+.sant {
+    display: block;
+    padding-left: 15px;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 135%;
+/* or 19px */
+
+text-decoration-line: underline;
+
+color: #000000;
+}
+
+.instat {
+    position: relative;
+    height: 250px;
+    width: 100%;
+    top: 800px;
+    background: #F9F7F7;
+}
+.insta1 {
+    position: absolute;
+    height: 52px;
+    margin-left: 550px;
+    margin-top: 80px;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 36px;
+line-height: 145%;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: #222222;
+
+}
+
+.insta2 {
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 680px;
+}
+.sum {
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 9px;
+line-height: 11px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #000000;
+
+}
+
+.sum1{
+    position: absolute;
+    margin-top: 175px;
+    margin-left: 650px;
+}
+.end1 {
+    position: relative;
+    height: 250px;
+    width: 100%;
+    top: 820px;
+  display: flex;
+  justify-content: space-around;
+}
+.e1, .e2 {
+    height: 250px;
+    width: 29%; 
+}
+
+.end {
+    position: relative;
+    height: 80px;
+    width: 100%;
+    top: 880px;
+
+  display: flex;
+  justify-content: space-around;
+  font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 135%;
+/* or 19px */
+
+text-align: right;
+
+color: #000000;
+}
+.d1 {
+    position: absolute;
+    margin-left: -510px;
+    margin-top: 30px;
+    width: 290px;
+    height: 20px;
+}
+.d2 {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 630px;
+    width: 290px;
+    height: 20px;
+}
+
+.meeenu {
+    display:flex;
+}
+    </style>
+</head>
+<body>
+ <div class="meeenu"> <img class="logo" src="img/logo.jpg">
+  <div class="main_menu">
+      <div class="rectangle1"><a class="rec1_a" href="#">Главная</a></div>
+      <div class="rectangle2"><a class="rec1_a" href="#">SOFIT EVENT HOUSE</a></div>
+      <div class="rectangle3"><a class="rec2_a" href="#">мероприятия</a></div>
+      <div class="rectangle3"><a class="rec2_a" href="#">туристам</a></div>
+      <div class="rectangle3"><a class="rec2_a" href="#">кейтеринг</a></div>
+      <div class="rectangle3"><a class="rec2_a" href="#">для агентств</a></div>
+  </div>
+  <div class="ext_menu">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+  </div>
+ </div>
+  <div class="main_items">
+      <div class="main_item1"><img class="mainimg" src="img/g6.jpg">
+    <div class="bloc1">
+        <div class="bloc1_1">
+            <span class="t1">Корпоративы</span>
+            <span class="t2">Отметьте лучший праздник <br>
+                в лучшем дворце Петербурга!</span>
+        </div>
+</div>
+    </div>
+      <div class="main_item2"><img class="mainimg" src="img/Rectangle 2 (1).jpg">
+        <div class="bloc2">
+            <div class="bloc1_2">
+                <span class="t1_1">свадьбы</span>
+                <span class="t2">Отметьте лучший праздник <br>
+                    в лучшем дворце Петербурга!</span>
+            </div>
+        </div>
+    </div>
+      <div class="main_item3"><img class="mainimg" src="img/Rectangle 2 (2).jpg">
+        <div class="bloc3">
+            <div class="bloc1_3">
+                <span class="t1">званые вечера</span>
+                <span class="t2">Отметьте лучший праздник <br>
+                    в лучшем дворце Петербурга!</span>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="aboutr">
+<div class="or">О РЕСТОРАНЕ</div>
+    <div class="grey1"></div>
+    <img class="desc" src="img/descr1.jpg" >
+    <span class="ld">летний дворец</span>
+    <img class="cart" src="img/cart.png">
+    <img class="cart1" src="img/logo_big.png">
+    <div class="tex1">Добро пожаловать в Летний Дворец! <br><br>
+
+        Всего в 12 километрах от Петербурга, неподалеку от знаменитых фонтанов и парков Петергофа воплощен в жизнь один из самых грандиозных проектов event-индустрии России – ресторанный комплекс «Летний Дворец». Открытый в 2009 году, он объединил под одной крышей современный банкетный зал в исторических дворцовых интерьерах на 800 гостей и собственный кейтеринг.
+    </div>
+    <div class="group">
+        <div class="bly1">
+            <div class="str1">
+            <img class="blyyy" src="img/descr11 (1).png">
+            <span class="blu">площадка</span></div>
+            <div class="ch">Сочетание классических интерьеров и современных технических возможностей выгодно отличают Летний Дворец от большинства других исторических площадок города.</div>
+        </div>
+        <div class="bly1">
+            <div class="str1">
+            <img class="blyyy" src="img/descr11 (2).png">
+            <span class="blu">интерьеры</span></div>
+            <div class="ch">Изысканное внутреннее убранство Летнего Дворца — тонко выполненная стилизация с использованием традиционных технологий и материалов — мрамора, бронзового литья.</div>
+        </div>
+        <div class="bly1">
+            <div class="str1">
+            <img class="blyyy" src="img/descr11 (3).png">
+            <span class="blu">технологии</span></div>
+            <div class="ch">Возможности «Летнего Дворца» практически безграничны с точки зрения проведения мероприятий самого разного формата и масштаба.</div>
+        </div>
+        <div class="bly1">
+            <div class="str1">
+            <img class="blyyy" src="img/descr11 (4).png">
+            <span class="blu">оборудование</span></div>
+            <div class="ch">Установлен комплект самого современного звукового оборудования, который приятно удивит даже знатока качественного звука.</div>
+        </div>
+    </div>
+  </div>
+
+  <div class="galery">
+    
+    <div class="gal">
+        <span class="g1">галерея</span>
+        <img src="img/descr1.jpg" style="padding-left: 35px;">
+        <span class="g2">летний дворец</span>
+    </div>
+  <div class="gop"> <img src="img/g1.png" style="width:330px; height:250px; margin-left: 230px; margin-right: 25px;">
+   <img src="img/g3.png"  style="  width:250px; height:250px;"> </div>
+
+   <img src="img/g3 (2).png" style="width:400px; height: 300px; padding-top: 10px;">
+   <img src="img/g5 (1).png" style="width:400px; height: 300px; padding-top: 10px; padding-left: 30px;">
+  
+  </div>
+
+  <div class="usnat">
+      <img  class="usta" src="img/usta.png"> 
+      <span class="us">узнайте о нас больше</span>
+      <div class="re1">Скачать план</div>
+      <div class="re2">Скачать презентацию</div>
+  </div>
+
+  <div class="contacts">
+<div class="con1">
+    <div class="tir1">
+        <span class="tir2">хотите провести <br>
+            мероприятие?</span>
+    </div>
+
+    <div class="tir3">
+        <span class="tir4">Или у вас остались вопросы, на которые мы сможем вам ответить <br> 
+            в процессе разговора - напишите нам. Мы открыты для диалога!</span>
+    </div>
+<div class="sup">
+<div class="sup1">
+    <span class="restic">ресторан</span>
+
+    <div class="diag">
+        <div><img src="img/Vector1.png"></div>
+        <div><span class="sant">Санкт-Петербургское <br> шоссе, д 130, к. 7</span></div>
+    </div>
+
+    <div class="diag2">
+        <div><img src="img/Vector2.png"></div>
+        <div><span class="sant">+7 (812) 210 67 95</span></div>
+    </div>
+
+    <div class="diag3">
+        <div><img src="img/Vector3.png"></div>
+        <div><span class="sant">hello@summerpalace.ru</span></div>
+    </div>
+
+</div>
+<div class="sup2">
+
+    <span class="restic">офис</span>
+
+    <div class="diag">
+        <div><img src="img/Vector1.png"></div>
+        <div><span class="sant">ст. м. «Лиговский проспект», <br> ул. Черняховского, д. 75</span></div>
+    </div>
+
+    <div class="diag2">
+        <div><img src="img/Vector2.png"></div>
+        <div><span class="sant">+7 (812) 210 67 95</span></div>
+    </div>
+
+    <div class="diag3">
+        <div><img src="img/Vector3.png"></div>
+        <div><span class="sant">hello@summerpalace.ru</span></div>
+    </div>
+</div>
+</div>
+</div>
+<div class="con2">
+    <form class="contact_form">
+     <div> <span class="tel"> Ваше имя: </span><input type="text" class="inp1"> </div>
+     <div> <span class="tel">Ваш emai: </span><input type="text" class="inp2"> </div> 
+     <div> <input type="text" class="inp3" value="сообщение"> </div>
+       <div><input type="submit" value="отправить" class="send"></div>
+    </form>
+</div>
+  </div>
+
+  <div class="instat">
+      <div class="insta1">наш instagram</div>
+      <div class="insta2"><img src="img/descr1.jpg"></div>
+      <div class="sum1"><span сlass="sum">летний дворец</span></div>
+  </div>
+
+  <div class="end1">
+      <div class="en"><img src="img/e1.png"></div>
+      <div class="en"><img src="img/e2.png"></div>
+      <div class="en"><img src="img/e1.png"></div>
+      <div class="en"><img src="img/e2.png"></div>
+  </div>
+  <div class="end">
+      <div class="d1">Copyright (с) 2019 Ресторан “Летний дворец”</div>
+      <div class="d2">Facebook — 	Vkontakte — 	Instagram</div>
+  </div>
+</body>
+</html>
